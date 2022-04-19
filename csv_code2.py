@@ -1,7 +1,7 @@
 import csv
 
-f_in = open('C:\Data\Python\IEPUG\CSV\sample.csv')
-f_out = open('C:\Data\Python\IEPUG\CSV\output.csv', 'w')
+f_in = open('sample.csv')
+f_out = open('output.csv', 'w')
 
 try:
     reader = csv.reader(f_in)
@@ -13,4 +13,4 @@ finally:
     f_out.close()
     f_in.close()
 
-print open('C:\Data\Python\IEPUG\CSV\output.csv').read()
+print(open('output.csv').read())
